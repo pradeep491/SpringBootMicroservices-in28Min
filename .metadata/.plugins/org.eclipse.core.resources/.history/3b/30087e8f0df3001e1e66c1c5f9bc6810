@@ -1,0 +1,23 @@
+package com.test.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.test.model.HelloWorld;
+
+@RestController
+public class RestControllerEx {
+
+	@GetMapping(value = "/hello-world")
+	public String hello() {
+		return "Hello World...!";
+	}
+	@GetMapping(value = "/hello-world-bean")
+	public HelloWorld helloWorldBean() {
+		return new HelloWorld("Hello World Bean...!");
+	}
+	@GetMapping(value = "/hello-world")
+	public HelloWorld helloPath() {
+		return "Hello World...!";
+	}
+}

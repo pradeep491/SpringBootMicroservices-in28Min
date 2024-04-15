@@ -1,0 +1,7 @@
+package com.test.model;
+
+public class HelloWorld {
+	private String message;
+	
+
+}

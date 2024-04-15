@@ -1,0 +1,6 @@
+package com.in28minutes.rest.webservices.restfulwebservices.controller;
+
+@RestController
+public class HelloWorldController {
+
+}
