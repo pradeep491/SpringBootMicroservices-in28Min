@@ -28,6 +28,7 @@ public class UserController {
 	@GetMapping("/users/{id}")
 	public User findUser(@PathVariable int id) {
 		return service.findUser(id);
+
 	}
 	@PostMapping("/users")
 	public User createUser(@RequestBody User user) {
